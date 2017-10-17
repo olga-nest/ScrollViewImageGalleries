@@ -10,7 +10,5 @@
 
 @interface ViewController : UIViewController <UIScrollViewDelegate>
 
--(void)UIScrollViewDelegate;
-
 @end
 

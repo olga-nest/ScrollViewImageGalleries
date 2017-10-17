@@ -16,6 +16,7 @@
 @property (nonatomic) IBOutlet UIImageView *imageView3;
 @property (nonatomic) UIImage *detailImage;
 @property (strong, nonatomic) ViewController *viewController;
+@property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
 
 @end
 
@@ -24,9 +25,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.scrollView.delegate = self;
+    [self setupPageControll];
     
-    UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(showImageDetailView:)];
-    [self.scrollView addGestureRecognizer:tapRecognizer];
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(UIGestureRecognizer *)sender {
@@ -35,16 +35,25 @@
         UIImageView *tappedView = (UIImageView *) sender.view;
         ImageDetailViewController *controller = (ImageDetailViewController *)segue.destinationViewController;
         controller.image = tappedView.image;
-//    }
 }
 
 
 -(IBAction)showImageDetailView: (UITapGestureRecognizer *) sender {
     
-//    UIImageView *tappedView = (UIImageView *)sender.view;
-//    self.detailImage = tappedView.image;
-//   
     [self performSegueWithIdentifier:@"detailedView" sender:sender];
+}
+
+-(void)setupPageControll {
+    self.pageControl.pageIndicatorTintColor = [UIColor grayColor];
+    self.pageControl.currentPageIndicatorTintColor = [UIColor darkGrayColor];
+}
+
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    
+    float fractionalPage = self.scrollView.contentOffset.x / self.view.frame.size.width;
+    NSInteger page = lround(fractionalPage);
+    self.pageControl.currentPage = page;
+    
 }
 
 

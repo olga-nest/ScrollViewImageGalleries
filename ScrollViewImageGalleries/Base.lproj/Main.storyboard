@@ -71,15 +71,20 @@
                                     <constraint firstAttribute="trailing" secondItem="CZl-Sb-aKt" secondAttribute="trailing" id="tPE-sb-2wG"/>
                                 </constraints>
                             </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="jDt-TD-g1r">
+                                <rect key="frame" x="168" y="610" width="39" height="37"/>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="ZkY-de-bmS" secondAttribute="top" id="JAh-om-Nsn"/>
                             <constraint firstItem="ZkY-de-bmS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="JRG-Pu-wKf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jDt-TD-g1r" secondAttribute="bottom" constant="20" id="Muq-IL-zvJ"/>
                             <constraint firstItem="7pr-mT-4Ur" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="Nms-HK-IYK"/>
                             <constraint firstItem="ZkY-de-bmS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ODn-ij-AlJ"/>
                             <constraint firstItem="CZl-Sb-aKt" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="PX0-YD-gwd"/>
                             <constraint firstItem="7pr-mT-4Ur" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Vk5-CZ-Kc5"/>
+                            <constraint firstItem="jDt-TD-g1r" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Z6O-ve-eSb"/>
                             <constraint firstItem="ZkY-de-bmS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gVn-QW-ZMK"/>
                             <constraint firstItem="CZl-Sb-aKt" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="otj-SJ-0K4"/>
                             <constraint firstItem="ZkY-de-bmS" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="s0Z-ew-8SH"/>
@@ -94,6 +99,7 @@
                         <outlet property="imageView1" destination="MEu-25-iAC" id="noZ-it-CNw"/>
                         <outlet property="imageView2" destination="7pr-mT-4Ur" id="mPC-q6-2od"/>
                         <outlet property="imageView3" destination="CZl-Sb-aKt" id="fZN-ea-kCh"/>
+                        <outlet property="pageControl" destination="jDt-TD-g1r" id="qZo-Zp-ff7"/>
                         <outlet property="scrollView" destination="ZkY-de-bmS" id="Dv4-TG-eFW"/>
                     </connections>
                 </viewController>

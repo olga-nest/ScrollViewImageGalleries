@@ -69,10 +69,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Image Detail View Controller-->
         <scene sceneID="JaC-eN-iTA">
             <objects>
-                <viewController id="BPo-wN-GZd" sceneMemberID="viewController">
+                <viewController id="BPo-wN-GZd" customClass="ImageDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4ag-J8-u22">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -103,6 +103,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FJ7-62-OxG"/>
                     </view>
+                    <connections>
+                        <outlet property="detailImageView" destination="ts2-4h-lG8" id="jGT-e7-hFj"/>
+                        <outlet property="detailScrollView" destination="qRT-k2-mx2" id="xOP-11-GPL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CEg-K9-7sh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

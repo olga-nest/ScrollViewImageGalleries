@@ -8,7 +8,11 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <UIScrollViewDelegate>
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (nonatomic) IBOutlet UIImageView *imageView1;
+@property (nonatomic) IBOutlet UIImageView *imageView2;
+@property (nonatomic) IBOutlet UIImageView *imageView3;
 
 @end
 
@@ -16,14 +20,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.scrollView.delegate = self;
+//    self.scrollView = [[UIScrollView alloc]initWithFrame:self.view.frame];
+//    [self.view addSubview:self.scrollView];
+//    self.scrollView.pagingEnabled = YES;
+//    [self createImageViews];
+//    [self setupLayout];
+    
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)UIScrollViewDelegate {
+    
 }
-
 
 @end

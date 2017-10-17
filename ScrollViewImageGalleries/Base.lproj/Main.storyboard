@@ -26,7 +26,7 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lighthouse" translatesAutoresizingMaskIntoConstraints="NO" id="7pr-mT-4Ur">
                                         <rect key="frame" x="375" y="0.0" width="375" height="667"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lighthouse-night" translatesAutoresizingMaskIntoConstraints="NO" id="CZl-Sb-aKt">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lighthouse-night" translatesAutoresizingMaskIntoConstraints="NO" id="CZl-Sb-aKt">
                                         <rect key="frame" x="750" y="0.0" width="375" height="667"/>
                                     </imageView>
                                 </subviews>
